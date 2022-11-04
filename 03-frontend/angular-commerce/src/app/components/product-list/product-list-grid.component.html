@@ -8,7 +8,7 @@
             <img src="{{ tempProduct.imageUrl }}" class="img-responsive" />
             <h1>{{ tempProduct.name }}</h1>
             <div class="price">
-              {{ tempProduct.unitsInStock | currency: "EUR" }}
+              {{ tempProduct.unitPrice | currency: "EUR" }}
             </div>
             <a href="#" class="primary-btn"> ADD to cart</a>
           </div>
