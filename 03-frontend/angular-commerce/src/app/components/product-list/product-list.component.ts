@@ -29,10 +29,12 @@ export class ProductListComponent implements OnInit {
       // The '!' is the non-null assertion operator.
       // This tells the compiler that hte object is not null
       this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
+    } else {
+      // default category id
+      this.currentCategoryId = 1;
     }
 
-    this.currentCategoryId = 1;
-
+    // now get the products for the given category id
     this.productService
       .getProductList(this.currentCategoryId)
       .subscribe((data) => {
