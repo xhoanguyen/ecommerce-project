@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
+import { LoginStatusComponent } from './components/login-status/login-status.component';
 
 const routes: Routes = [
   // When patch matches (category/:id) create new insance of component
@@ -19,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent, LoginComponent],
+  declarations: [AppComponent, ProductListComponent, LoginComponent, LoginStatusComponent],
   // Import all module for the frontend
   imports: [RouterModule.forRoot(routes), BrowserModule, HttpClientModule],
   providers: [ProductService],
