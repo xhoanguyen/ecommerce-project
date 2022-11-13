@@ -2605,3 +2605,5 @@
 03-frontend/node_modules/bootstrap/scss/mixins/_visually-hidden.scss
 03-frontend/node_modules/bootstrap/scss/utilities/_api.scss
 03-frontend/node_modules/bootstrap/scss/vendor/_rfs.scss
+03-frontend/angular-commerce/package-lock.json
+03-frontend/angular-commerce/package.json
